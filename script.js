@@ -193,16 +193,16 @@ function draw(){
 }
 let zas_flag = 0;
 function checkKey(e){
-  if(e.keyCode=='38'){// up arrow
+  if(e.keyCode=='38' || e.keyCode=='87'){// up arrow
      Pociong.set(0,-1);
     }
-  else if(e.keyCode=='39'){// right arrow
+  else if(e.keyCode=='39' || e.keyCode=='68'){// right arrow
      Pociong.set(1,0);
     }
-  else if(e.keyCode=='40'){// down arrow
+  else if(e.keyCode=='40' || e.keyCode=='83'){// down arrow
      Pociong.set(0,1);
     }
-  else if(e.keyCode=='37'){// left arrow
+  else if(e.keyCode=='37' || e.keyCode=='65'){// left arrow
      Pociong.set(-1,0);
     }
   else if(e.keyCode=='65'){
