@@ -193,7 +193,7 @@ function draw(){
 }
 let zas_flag = 0;
 function checkKey(e){
-  if(!picking_flag){
+
   if(e.keyCode=='38' || e.keyCode=='87'){// up arrow
      Pociong.set(0,-1);
     }
@@ -206,8 +206,6 @@ function checkKey(e){
   else if(e.keyCode=='37' || e.keyCode=='65'){// left arrow
      Pociong.set(-1,0);
     }
-  }
-  else{
   else if(e.keyCode=='65'){
        if(picking_flag==true){
          speed=6;
@@ -257,7 +255,6 @@ function checkKey(e){
       picking_flag=true;
     }
   }
- }
 }
 
 document.addEventListener("keydown",checkKey);
